@@ -23,9 +23,9 @@ namespace platform {
 
 	std::string executable_path();
 
-	void open_url(const std::string& url) {} // dummy function
+	inline void open_url(const std::string& url) {} // dummy function
 
-	void dump_and_exit() {} // dummy function
+	inline void dump_and_exit() {} // dummy function
 }
 
 #else
