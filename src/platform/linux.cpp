@@ -1,9 +1,10 @@
+#if defined (__linux__)
+
 #include "iostream"
 #include "util/logger.hpp"
 #include <bitset>
 #include <list>
 #include <pthread.h>
-#if defined (__linux__)
 
 #include "game/world.hpp"
 #include "sched/runner.hpp"

@@ -19,9 +19,13 @@ namespace platform {
 	void set_thread_affinity(std::thread& thread, affinity_mask mask);
 
 	using signal_handler = std::function<void(int)>;
-    inline void on_close(signal_handler callback) {}
+    inline void on_close(signal_handler callback) {} // dummy function
 
 	std::string executable_path();
+
+	void open_url(const std::string& url) {} // dummy function
+
+	void dump_and_exit() {} // dummy function
 }
 
 #else
